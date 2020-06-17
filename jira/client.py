@@ -272,7 +272,10 @@ class JIRA(object):
         * check_update -- Check whether using the newest python-jira library version.
         * cookies -- A dict of custom cookies that are sent in all requests to the server.
 
-    :param basic_auth: A tuple of username and password to use when establishing a session via HTTP BASIC
+    :param basic_auth: A tuple of 
+    
+    
+    and password to use when establishing a session via HTTP BASIC
         authentication.
     :param oauth: A dict of properties for OAuth authentication. The following properties are required:
 
@@ -2833,7 +2836,7 @@ class JIRA(object):
         :rtype: ResultList
         """
         params = {
-            "username": user,
+            "query": user,
             "includeActive": includeActive,
             "includeInactive": includeInactive,
         }
